@@ -48,4 +48,11 @@ The intended workflow is:
 5. bout-level and episode-level descriptor summarisation;
 6. figure source-data and diagnostic-plot export.
 
-The corresponding scripts will be progressively organised in the `scripts/` directory.
+The corresponding scripts will be progressively organised in the `CAME_core_scripts/scripts/` directory.
+
+## Documentation
+
+- [Input format](docs/input_format.md)
+- [Visual front-end](docs/visual_frontend.md)
+- [CAME workflow](docs/came_workflow.md)
+- [Output files](docs/output_files.md)

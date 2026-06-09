@@ -1,0 +1,48 @@
+fps: 1.0
+
+input_columns:
+  frame: FrameNumber
+  group: group_id
+  box: box
+  mask: mask
+  head: kps0_det
+  tail: kps1_det
+  posture: posture
+  zone: zone_label
+
+stationary_bout:
+  min_duration_sec: 10
+  stationary_labels: ["s", "stationary"]
+  contexts:
+    LAS:
+      allowed_postures: ["lying"]
+      allowed_zones: ["Resting", "Resting-overlap", "Resting-other-overlap"]
+    FAS:
+      allowed_postures: ["standing", "other"]
+      allowed_zones: ["Feeder"]
+    SAS:
+      allowed_postures: ["standing"]
+      allowed_zones: ["Resting", "Resting-overlap", "Resting-other-overlap"]
+
+instability_score:
+  columns:
+    - orientation_heading_energy
+    - morph_pose_energy
+    - kin_linear_energy
+    - microburst_energy
+    - spectral_dynamics_energy
+    - coordination_head_body_energy
+    - slowfast_semantics_state_energy
+    - stability_occlusion_contact_energy
+    - boundary_delta_energy
+    - boundary_mmd_energy
+  weights: uniform
+
+phase_decoding:
+  threshold_mode: quantile
+  q1: 0.60
+  q2: 0.85
+  labels:
+    - stable
+    - intermediate-instability
+    - high-instability
