@@ -23,6 +23,8 @@ CAME operates after visual observations have been generated. Each object-level o
 
 CAME does not require long-term identity-preserved tracking. Instead, it organises detections into anonymous short-term tubelets for downstream micro-dynamic feature construction.
 
+CAME-MicroEthology assumes that structured visual observations have already been generated. The repository does not require a specific upstream detector or annotation format. JSON-to-CSV conversion scripts may be provided as optional utilities, but the core CAME workflow begins from cleaned visual-observation CSV files.
+
 ## Visual front-end
 
 In our study, visual observations were generated using a SAM3-based segmentation workflow, a YOLO-based posture classification model, and a DeepLabCut ResNet-based head-tail keypoint estimator.
@@ -35,8 +37,15 @@ This repository does not redistribute SAM3, YOLO, DeepLabCut, or their model wei
 
 ## Minimal workflow
 
-```bash
-python scripts/json_to_csv.py
-python scripts/tracklet_cleaner.py
-python scripts/crop_and_split_tubelets.py
-python scripts/detection_completeness.py
+CAME starts from structured visual-observation CSV files rather than raw videos. The expected input is a frame-wise object-level table containing bounding boxes, instance contours or masks, head-tail keypoints, posture labels, functional-zone labels, frame numbers and anonymous local object identifiers.
+
+The intended workflow is:
+
+1. visual-observation completeness assessment;
+2. second-wise feature extraction;
+3. context-anchored stationary-bout extraction;
+4. micro-dynamic phase decoding;
+5. bout-level and episode-level descriptor summarisation;
+6. figure source-data and diagnostic-plot export.
+
+The corresponding scripts will be progressively organised in the `scripts/` directory.
