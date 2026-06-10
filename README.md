@@ -47,43 +47,40 @@ The repository is under active organisation. At this stage, it provides essentia
 ## ✨ Scope
 
 CAME operates after visual observations have been generated. Each object-level observation may include:
+```bash
+- Bounding boxes;
+- Instance contours or masks;
+- Anatomical head-tail keypoints;
+- Coarse posture labels;
+- Functional-zone labels;
+- Anonymous local object identifiers.
+```
 
-- bounding boxes;
-- instance contours or masks;
-- anatomical head-tail keypoints;
-- coarse posture labels;
-- functional-zone labels;
-- anonymous local object identifiers.
+<p align="center">
+  <span style="display: inline-block; width: 180px; margin: 0 6px; vertical-align: top; text-align: center;">
+    <img src="docs/figures/drink.gif" alt="Standing visual observation" height="160"><br>
+    <sub><strong>Functional-zone visual observation</strong></sub>
+  </span>
+  <span style="display: inline-block; width: 430px; margin: 0 6px; vertical-align: top; text-align: center;">
+    <img src="docs/figures/run.gif" alt="Locomotion visual observation" height="160"><br>
+    <sub><strong>Locomotion-aware visual observation</strong></sub>
+  </span>
+  <span style="display: inline-block; width: 180px; margin: 0 6px; vertical-align: top; text-align: center;">
+    <img src="docs/figures/sitting.gif" alt="Resting visual observation" height="160"><br>
+    <sub><strong>Posture-associated representation</strong></sub>
+  </span>
+</p>
 
-<table align="center">
-  <tr>
-    <td align="center" valign="top" width="180">
-      <img src="docs/figures/drink.gif" alt="Standing visual observation" height="180"><br>
-      <sub><strong>Functional-zone visual observation</strong></sub>
-    </td>
-    <td align="center" valign="top" width="430">
-      <img src="docs/figures/run.gif" alt="Locomotion visual observation" height="180"><br>
-      <sub><strong>Locomotion-aware visual observation</strong></sub>
-    </td>
-    <td align="center" valign="top" width="180">
-      <img src="docs/figures/sitting.gif" alt="Resting visual observation" height="180"><br>
-      <sub><strong>Posture-associated representation</strong></sub>
-    </td>
-  </tr>
-</table>
-
-<table align="center">
-  <tr>
-    <td align="center" valign="top" width="320">
-      <img src="docs/figures/keypoints_lying.gif" alt="Resting visual observation" height="140"><br>
-      <sub><strong>Stationary bout visual observation</strong></sub>
-    </td>
-    <td align="center" valign="top" width="320">
-      <img src="docs/figures/keypoints_sleep.gif" alt="Resting visual observation" height="140"><br>
-      <sub><strong>Low-motion micro-dynamic observation</strong></sub>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <span style="display: inline-block; width: 320px; margin: 0 8px; vertical-align: top; text-align: center;">
+    <img src="docs/figures/keypoints_lying.gif" alt="Resting visual observation" height="160"><br>
+    <sub><strong>Stationary bout visual observation</strong></sub>
+  </span>
+  <span style="display: inline-block; width: 320px; margin: 0 8px; vertical-align: top; text-align: center;">
+    <img src="docs/figures/keypoints_sleep.gif" alt="Resting visual observation" height="160"><br>
+    <sub><strong>Low-motion micro-dynamic observation</strong></sub>
+  </span>
+</p>
 
 > [!NOTE]
 > CAME does not require long-term identity-preserved tracking. Instead, it organises detections into anonymous short-term tubelets for downstream micro-dynamic feature construction.
@@ -96,11 +93,11 @@ Example CSV files are provided in [`examples/minimal_csv`](examples/minimal_csv)
 ## 👁️ Visual Front-End
 
 CAME is model-agnostic with respect to upstream visual perception. In our study, visual observations were generated using:
-
+```bash
 - SAM3-based segmentation;
 - YOLO-based posture classification;
 - DeepLabCut ResNet-based head-tail keypoint estimation.
-
+```
 These models are optional upstream tools. CAME starts from cleaned visual-observation CSV files and does not redistribute SAM3, YOLO, DeepLabCut or their model weights.
 
 See [Visual front-end](docs/visual_frontend.md) for optional installation notes and recommended input schema.
@@ -110,11 +107,12 @@ See [Visual front-end](docs/visual_frontend.md) for optional installation notes 
 CAME starts from structured visual-observation CSV files rather than raw videos. The expected input is a frame-wise object-level table containing bounding boxes, instance contours or masks, head-tail keypoints, posture labels, functional-zone labels, frame numbers and anonymous local object identifiers.
 
 The minimal core workflow includes:
-
-1. second-wise feature extraction;
-2. context-anchored stationary-bout extraction;
-3. micro-dynamic phase decoding;
-4. bout-level descriptor summarisation.
+```bash
+1. Second-wise feature extraction;
+2. Context-anchored stationary-bout extraction;
+3. Micro-dynamic phase decoding;
+4. Bout-level descriptor summarisation.
+```
 
 ```bash
 python scripts/run_minimal_demo.py \
