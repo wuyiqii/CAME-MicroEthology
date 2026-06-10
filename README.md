@@ -55,30 +55,35 @@ CAME operates after visual observations have been generated. Each object-level o
 - functional-zone labels;
 - anonymous local object identifiers.
 
-<p align="center">
-  <img src="docs/figures/drink.gif" alt="Functional-zone visual observation" height="180">
-  <img src="docs/figures/run.gif" alt="Locomotion-aware visual observation" height="180">
-  <img src="docs/figures/sitting.gif" alt="Posture-associated representation" height="180">
-</p>
+<table align="center">
+  <tr>
+    <td align="center" valign="top" width="180">
+      <img src="docs/figures/drink.gif" alt="Standing visual observation" height="180"><br>
+      <sub><strong>Functional-zone visual observation</strong></sub>
+    </td>
+    <td align="center" valign="top" width="430">
+      <img src="docs/figures/run.gif" alt="Locomotion visual observation" height="180"><br>
+      <sub><strong>Locomotion-aware visual observation</strong></sub>
+    </td>
+    <td align="center" valign="top" width="180">
+      <img src="docs/figures/sitting.gif" alt="Resting visual observation" height="180"><br>
+      <sub><strong>Posture-associated representation</strong></sub>
+    </td>
+  </tr>
+</table>
 
-<p align="center">
-  <sub><strong>Functional-zone visual observation</strong></sub>
-  &nbsp;&nbsp;&nbsp;
-  <sub><strong>Locomotion-aware visual observation</strong></sub>
-  &nbsp;&nbsp;&nbsp;
-  <sub><strong>Posture-associated representation</strong></sub>
-</p>
-
-<p align="center">
-  <img src="docs/figures/keypoints_lying.gif" alt="Stationary bout visual observation" height="180">
-  <img src="docs/figures/keypoints_sleep.gif" alt="Low-motion micro-dynamic observation" height="180">
-</p>
-
-<p align="center">
-  <sub><strong>Stationary bout visual observation</strong></sub>
-  &nbsp;&nbsp;&nbsp;
-  <sub><strong>Low-motion micro-dynamic observation</strong></sub>
-</p>
+<table align="center">
+  <tr>
+    <td align="center" valign="top" width="320">
+      <img src="docs/figures/keypoints_lying.gif" alt="Resting visual observation" height="140"><br>
+      <sub><strong>Stationary bout visual observation</strong></sub>
+    </td>
+    <td align="center" valign="top" width="320">
+      <img src="docs/figures/keypoints_sleep.gif" alt="Resting visual observation" height="140"><br>
+      <sub><strong>Low-motion micro-dynamic observation</strong></sub>
+    </td>
+  </tr>
+</table>
 
 > [!NOTE]
 > CAME does not require long-term identity-preserved tracking. Instead, it organises detections into anonymous short-term tubelets for downstream micro-dynamic feature construction.
