@@ -56,31 +56,35 @@ CAME operates after visual observations have been generated. Each object-level o
 - Anonymous local object identifiers.
 ```
 
-<p align="center">
-  <span style="display: inline-block; width: 180px; margin: 0 6px; vertical-align: top; text-align: center;">
-    <img src="docs/figures/drink.gif" alt="Standing visual observation" height="160"><br>
-    <sub><strong>Functional-zone visual observation</strong></sub>
-  </span>
-  <span style="display: inline-block; width: 430px; margin: 0 6px; vertical-align: top; text-align: center;">
-    <img src="docs/figures/run.gif" alt="Locomotion visual observation" height="160"><br>
-    <sub><strong>Locomotion-aware visual observation</strong></sub>
-  </span>
-  <span style="display: inline-block; width: 180px; margin: 0 6px; vertical-align: top; text-align: center;">
-    <img src="docs/figures/sitting.gif" alt="Resting visual observation" height="160"><br>
-    <sub><strong>Posture-associated representation</strong></sub>
-  </span>
-</p>
+<table align="center" border="0" cellspacing="0" cellpadding="6">
+  <tr>
+    <td align="center" valign="top">
+      <img src="docs/figures/drink.gif" alt="Standing visual observation" height="160"><br>
+      <sub><strong>Functional-zone visual observation</strong></sub>
+    </td>
+    <td align="center" valign="top">
+      <img src="docs/figures/run.gif" alt="Locomotion visual observation" height="160"><br>
+      <sub><strong>Locomotion-aware visual observation</strong></sub>
+    </td>
+    <td align="center" valign="top">
+      <img src="docs/figures/sitting.gif" alt="Resting visual observation" height="160"><br>
+      <sub><strong>Posture-associated representation</strong></sub>
+    </td>
+  </tr>
+</table>
 
-<p align="center">
-  <span style="display: inline-block; width: 320px; margin: 0 8px; vertical-align: top; text-align: center;">
-    <img src="docs/figures/keypoints_lying.gif" alt="Resting visual observation" height="160"><br>
-    <sub><strong>Stationary bout visual observation</strong></sub>
-  </span>
-  <span style="display: inline-block; width: 320px; margin: 0 8px; vertical-align: top; text-align: center;">
-    <img src="docs/figures/keypoints_sleep.gif" alt="Resting visual observation" height="160"><br>
-    <sub><strong>Low-motion micro-dynamic observation</strong></sub>
-  </span>
-</p>
+<table align="center" border="0" cellspacing="0" cellpadding="6">
+  <tr>
+    <td align="center" valign="top">
+      <img src="docs/figures/keypoints_lying.gif" alt="Resting visual observation" height="160"><br>
+      <sub><strong>Stationary bout visual observation</strong></sub>
+    </td>
+    <td align="center" valign="top">
+      <img src="docs/figures/keypoints_sleep.gif" alt="Resting visual observation" height="160"><br>
+      <sub><strong>Low-motion micro-dynamic observation</strong></sub>
+    </td>
+  </tr>
+</table>
 
 > [!NOTE]
 > CAME does not require long-term identity-preserved tracking. Instead, it organises detections into anonymous short-term tubelets for downstream micro-dynamic feature construction.
