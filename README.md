@@ -64,13 +64,11 @@ Example CSV files are provided in [`examples/minimal_csv`](examples/minimal_csv)
 
 ## Visual front-end
 
-In our study, visual observations were generated using a SAM3-based segmentation workflow, a YOLO-based posture classification model, and a DeepLabCut ResNet-based head-tail keypoint estimator.
+CAME is model-agnostic with respect to upstream visual perception. In our study, visual observations were generated using a SAM3-based segmentation workflow, a YOLO-based posture classification model and a DeepLabCut ResNet-based head-tail keypoint estimator.
 
-The data organisation follows the semi-automated workflow proposed in our Accelerated-Data-Engine project, where model-generated candidate outputs are manually reviewed, corrected or filtered before downstream analysis.
+These models are optional upstream tools. CAME starts from cleaned visual-observation CSV files and does not redistribute SAM3, YOLO, DeepLabCut or their model weights.
 
-CAME itself is model-agnostic with respect to the upstream visual front-end. Users may replace SAM3, YOLO or DeepLabCut with other state-of-the-art models if the final outputs follow the CAME input schema.
-
-This repository does not redistribute SAM3, YOLO, DeepLabCut, or their model weights.
+See [Visual front-end](docs/visual_frontend.md) for optional installation notes and recommended input schema.
 
 ## Minimal workflow
 
