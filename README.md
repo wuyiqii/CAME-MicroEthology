@@ -56,32 +56,32 @@ CAME operates after visual observations have been generated. Each object-level o
 - Anonymous local object identifiers.
 ```
 
-<table align="center" border="0" cellspacing="0" cellpadding="6">
+<table align="center" border="0" cellspacing="0" cellpadding="6" style="border: none; border-collapse: collapse;">
   <tr>
-    <td align="center" valign="top">
+    <td align="center" valign="top" style="border: none;">
       <img src="docs/figures/drink.gif" alt="Standing visual observation" height="160"><br>
-      <sub><strong>Functional-zone visual observation</strong></sub>
+      <sub><strong>Standing visual observation</strong></sub>
     </td>
-    <td align="center" valign="top">
+    <td align="center" valign="top" style="border: none;">
       <img src="docs/figures/run.gif" alt="Locomotion visual observation" height="160"><br>
-      <sub><strong>Locomotion-aware visual observation</strong></sub>
+      <sub><strong>Locomotion visual observation</strong></sub>
     </td>
-    <td align="center" valign="top">
+    <td align="center" valign="top" style="border: none;">
       <img src="docs/figures/sitting.gif" alt="Resting visual observation" height="160"><br>
-      <sub><strong>Posture-associated representation</strong></sub>
+      <sub><strong>Resting visual observation</strong></sub>
     </td>
   </tr>
 </table>
 
-<table align="center" border="0" cellspacing="0" cellpadding="6">
+<table align="center" border="0" cellspacing="0" cellpadding="6" style="border: none; border-collapse: collapse;">
   <tr>
-    <td align="center" valign="top">
+    <td align="center" valign="top" style="border: none;">
       <img src="docs/figures/keypoints_lying.gif" alt="Resting visual observation" height="160"><br>
-      <sub><strong>Stationary bout visual observation</strong></sub>
+      <sub><strong>Resting visual observation</strong></sub>
     </td>
-    <td align="center" valign="top">
+    <td align="center" valign="top" style="border: none;">
       <img src="docs/figures/keypoints_sleep.gif" alt="Resting visual observation" height="160"><br>
-      <sub><strong>Low-motion micro-dynamic observation</strong></sub>
+      <sub><strong>Resting visual observation</strong></sub>
     </td>
   </tr>
 </table>
