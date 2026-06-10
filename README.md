@@ -4,16 +4,14 @@
 
 ---
 
-# CAME-MicroEthology
-
-Context-Anchored Micro-Ethology (CAME) is an unsupervised computational framework for resolving micro-dynamic organisation within context-anchored stationary animal behaviour.
+ Context-Anchored Micro-Ethology (CAME) is an unsupervised computational framework for resolving micro-dynamic organisation within context-anchored stationary animal behaviour.
 
 <p align="center">
   <img src="docs/figures/came_conceptual_design.png" alt="CAME workflow" width="800">
 </p>
 
 <p align="center">
-  <em>Overview of the Context-Anchored Micro-Ethology workflow.</em>
+  <em>Overview of the Context-Anchored Micro-Ethology conceptual design.</em>
 </p>
 
 This repository is associated with the manuscript:
@@ -31,12 +29,41 @@ CAME operates after visual observations have been generated. Each object-level o
 - anatomical head-tail keypoints;
 - coarse posture labels;
 - functional-zone labels;
-- frame numbers;
 - anonymous local object identifiers.
+
+```html
+<table>
+  <tr>
+    <td align="center">
+      <video src="docs/figures/drink.mp4" controls height="180"></video><br>
+      <sub>Functional-zone visual observation</sub>
+    </td>
+    <td align="center">
+      <video src="docs/figures/run.mp4" controls height="180"></video><br>
+      <sub>Locomotion-aware visual observation</sub>
+    </td>
+    <td align="center">
+      <video src="docs/figures/sitting.mp4" controls height="180"></video><br>
+      <sub>Posture-associated representation</sub>
+    </td>
+    <td align="center">
+      <video src="docs/figures/keypoints_lying.mp4" controls height="180"></video><br>
+      <sub>Stationary bout visual observation</sub>
+    </td>
+    <td align="center">
+      <video src="docs/figures/keypoints_sleep.mp4" controls height="180"></video><br>
+      <sub>Low-motion micro-dynamic observation</sub>
+    </td>
+  </tr>
+</table>
+```
+
 
 CAME does not require long-term identity-preserved tracking. Instead, it organises detections into anonymous short-term tubelets for downstream micro-dynamic feature construction.
 
-CAME-MicroEthology assumes that structured visual observations have already been generated. The repository does not require a specific upstream detector or annotation format. JSON-to-CSV conversion scripts may be provided as optional utilities, but the core CAME workflow begins from cleaned visual-observation CSV files.
+CAME-MicroEthology assumes that structured visual observations have already been generated. The repository does not require a specific upstream detector or annotation format. The core CAME workflow begins from cleaned visual-observation CSV files.
+
+Example CSV files are provided in [`examples/minimal_csv`](examples/minimal_csv). These files illustrate the expected input schema, including frame index, anonymous local object ID, bounding box, instance contour, head-tail keypoints, posture label, functional-zone label and stationary/dynamic label. They are anonymised short tubelets for demonstrating the minimal CAME workflow, not the full dataset used in the manuscript.
 
 ## Visual front-end
 
