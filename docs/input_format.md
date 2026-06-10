@@ -12,7 +12,7 @@ Each row represents one object-centred observation at one frame or second. The r
 - kps1_det
 - posture
 - zone_label
-- pred_ds_label
+
 
 ## Required columns
 
