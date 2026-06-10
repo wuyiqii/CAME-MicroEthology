@@ -24,7 +24,6 @@ kps0_det: head keypoint.
 kps1_det: tail keypoint.
 posture: coarse posture label.
 zone_label: functional-zone label.
-pred_ds_label: stationary or dynamic label.
 
 ## Notes
 
