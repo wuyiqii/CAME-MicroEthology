@@ -31,7 +31,6 @@ CAME operates after visual observations have been generated. Each object-level o
 - functional-zone labels;
 - anonymous local object identifiers.
 
-```html
 <table>
   <tr>
     <td align="center">
@@ -56,8 +55,6 @@ CAME operates after visual observations have been generated. Each object-level o
     </td>
   </tr>
 </table>
-```
-
 
 CAME does not require long-term identity-preserved tracking. Instead, it organises detections into anonymous short-term tubelets for downstream micro-dynamic feature construction.
 
