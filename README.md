@@ -1,14 +1,10 @@
-
-# CAME-MicroEthology
-
 <p align="center">
   <img src="docs/figures/title.png" alt="CAME workflow" width="800">
 </p>
 
-<p align="center">
-  <em>Overview of the Context-Anchored Micro-Ethology workflow.</em>
-</p>
+---
 
+# CAME-MicroEthology
 
 Context-Anchored Micro-Ethology (CAME) is an unsupervised computational framework for resolving micro-dynamic organisation within context-anchored stationary animal behaviour.
 
