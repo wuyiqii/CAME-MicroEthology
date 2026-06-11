@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use CAME-MicroEthology, please cite the associated manuscript."
+title: "CAME-MicroEthology"
+type: software
+authors:
+  - family-names: "Wu"
+    given-names: "Yiqi"
+  - family-names: "Li"
+    given-names: "Jiangong"
+    email: "jli153@cau.edu.cn"
+abstract: "Context-Anchored Micro-Ethology (CAME) is an unsupervised computational framework for resolving micro-dynamic organisation within context-anchored stationary animal behaviour."
+keywords:
+  - computational ethology
+  - animal behaviour
+  - micro-dynamics
+  - stationary bouts
+  - behavioural phenotyping
+repository-code: "https://github.com/wuyiqii/CAME-MicroEthology"
+url: ""
+license: "LicenseRef-PolyForm-Noncommercial-1.0.0"
+version: "0.1.0"
+preferred-citation:
+  type: article
+  title: "A Context-Anchored Micro-Ethological Computational Framework for Behavioural Analysis of Pigs in Stationary Bouts"
+  authors:
+    - family-names: "Wu"
+      given-names: "Yiqi"
+    - family-names: "Li"
+      given-names: "Jiangong"
+      email: "jli153@cau.edu.cn"
+  year: 2026
+  notes: "Manuscript under review"

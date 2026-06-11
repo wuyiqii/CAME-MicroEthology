@@ -1,0 +1,20 @@
+CAME-MicroEthology Notice
+
+This repository contains the minimal public implementation of the CAME core
+pipeline for non-commercial academic use.
+
+Code:
+PolyForm Noncommercial License 1.0.0.
+
+Documentation, figures and example materials:
+Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0),
+unless otherwise stated.
+
+Third-party tools:
+SAM3, YOLO and DeepLabCut are optional upstream visual-front-end tools used in
+the associated study. They are not redistributed in this repository. Users
+should install and use these tools according to their official instructions,
+licences and model-weight terms.
+
+Correspondence:
+Jiangong Li <jli153@cau.edu.cn>

@@ -1,5 +1,24 @@
-This repository is released for non-commercial academic use only.
+CAME-MicroEthology License Notice
 
-Commercial use, redistribution for commercial purposes, and integration into commercial products are not permitted without prior written permission from the authors.
+Copyright (c) 2026 Yiqi Wu and Jiangong Li.
 
-A formal non-commercial software license will be added before the first stable release.
+Code in this repository is released for non-commercial academic use only under
+the PolyForm Noncommercial License 1.0.0.
+
+Full licence text:
+https://polyformproject.org/licenses/noncommercial/1.0.0/
+
+Documentation, figures and example materials are licensed under the Creative
+Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0),
+unless otherwise stated.
+
+Full licence text:
+https://creativecommons.org/licenses/by-nc/4.0/legalcode
+
+Commercial use, redistribution for commercial purposes, and integration into
+commercial products are not permitted without prior written permission from
+the authors.
+
+This repository does not redistribute SAM3, YOLO, DeepLabCut, or their model
+weights. These third-party tools are governed by their own licences and terms
+of use.
